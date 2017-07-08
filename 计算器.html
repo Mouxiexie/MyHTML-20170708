@@ -1,0 +1,75 @@
+<!DOCDYPE html>
+<html>
+<head>
+    
+    <title>计算器</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+html,body{
+   height:800px;
+   width:400px;
+   overflow:hidden;
+   border:1px solid gold;
+   padding:0;
+   margin:auto;
+   }
+div{
+    box-sizing:border-box;
+    font:26px/30px;
+     cursor:pointer;
+}
+#main{height:100%;} 
+#run{height:20%;}
+.c6{
+
+width:50%;
+float:left;
+height:16%; 
+}
+.c3{
+     float:left;
+     width:25%; 
+     height:16%;
+     border:1px solid gold;
+     text-align:center;
+     line-height:120px;
+}
+.bt{background-color:orange;}
+</style>
+<body>
+<div id="main">
+  <div id="run">放置运算结果</div>
+  <div class="c3">C</div>
+  <div class="c3">+/-</div>
+  <div class="c3">back</div>
+  <div class="c3 bt">/</div>
+  <div class="c3">7</div>
+  <div class="c3">8</div>
+  <div class="c3">9</div>
+  <div class="c3 bt">*</div>
+  <div class="c3">4</div>
+  <div class="c3">5</div>
+  <div class="c3">6</div>
+  <div class="c3 bt">+</div>
+  <div class="c3">1</div>
+  <div class="c3">2</div>
+  <div class="c3">3</div>
+  <div class="c3 bt">-</div>
+  <div class="c6 ">0</div>
+  <div class="c3">.</div>
+  <div class="c3 bt">=</div>
+</div>
+<script>
+  var main=document.getElementById("main");
+  var run=document.getElementById("run");
+  main.onclick=function(ev){
+   var el=ev.target;
+   if(el.innerHTML=="C"){
+     run.innerHTML="";
+   }
+   
+}
+</script>
+</body>
+</html>
